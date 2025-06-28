@@ -1,80 +1,47 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import AddProduct from './AddProduct'; // Import AddProduct như component
 
 export default function Home() {
-  const [products, setProducts] = useState([]);
-  const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    fetchProducts();
-  }, []);
-
-  const fetchProducts = async () => {
-    try {
-      const res = await axios.get('http://localhost:5000/api/products', {
-        headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
-      });
-      setProducts(res.data);
-    } catch (error) {
-      alert('Lỗi khi tải dữ liệu sản phẩm');
-    }
-  };
-
-  const handleDelete = async (id) => {
-    if (!window.confirm('Bạn có chắc muốn xóa sản phẩm này?')) return;
-    try {
-      await axios.delete(`
-        http://localhost:5000/api/products/${id}`, {
-        headers: { Authorization: 
-          `Bearer ${localStorage.getItem('token')}` },
-      });
-      fetchProducts();
-    } catch (error) {
-      alert('Xóa thất bại');
-    }
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    navigate('/');
   };
 
   return (
-    <div className="p-4 relative">
-      <h2 className="text-2xl mb-4">Danh sách sản phẩm</h2>
-      <button className="btn btn-success mb-3" onClick={() => setShowModal(true)}>
-        Thêm sản phẩm
-      </button>
-
-    
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {products.map((prod) => (
-          <div key={prod._id} className="border p-3 rounded shadow">
-            <img src={prod.image} alt={prod.name} className="w-full h-40 object-cover mb-2" />
-            <h5 className="font-bold">{prod.name}</h5>
-            <p>{prod.description}</p>
-            <p><strong>Nhu cầu:</strong> {prod.nhu_cau}</p>
-            <p><strong>Giá:</strong> {prod.price?.toLocaleString()} VND</p>
-            <button className="btn btn-warning me-2" onClick={() => navigate(`/edit/${prod._id}`)}>Sửa</button>
-            <button className="btn btn-danger" onClick={() => handleDelete(prod._id)}>Xóa</button>
-          </div>
-        ))}
+    <div className="min-h-screen bg-gray-100 p-6">
+      <div className="flex justify-between items-center mb-6">
+        <h1 className="text-2xl font-bold text-gray-700">📊 Bảng Thống Kê Kinh Doanh</h1>
+        <button
+          onClick={handleLogout}
+          className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+        >
+          Đăng xuất
+        </button>
       </div>
 
-     
-      {showModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white rounded-lg shadow-lg w-full max-w-2xl max-h-[90vh] overflow-y-auto p-4 relative">
-            <button className="absolute top-2 right-2 text-red-500 font-bold text-xl" onClick={() => setShowModal(false)}>
-              &times;
-            </button>
-            <AddProduct
-              onClose={() => {
-                setShowModal(false);
-                fetchProducts(); 
-              }}
-            />
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="bg-white p-6 rounded shadow">
+          <h2 className="text-lg font-semibold text-gray-600 mb-2">Tổng doanh thu tháng này</h2>
+          <p className="text-2xl font-bold text-blue-600">₫120,000,000</p>
         </div>
-      )}
+
+        <div className="bg-white p-6 rounded shadow">
+          <h2 className="text-lg font-semibold text-gray-600 mb-2">Số đơn hàng đã xử lý</h2>
+          <p className="text-2xl font-bold text-green-600">320 đơn</p>
+        </div>
+
+        <div className="bg-white p-6 rounded shadow">
+          <h2 className="text-lg font-semibold text-gray-600 mb-2">Khách hàng mới</h2>
+          <p className="text-2xl font-bold text-yellow-600">58 người</p>
+        </div>
+
+        <div className="bg-white p-6 rounded shadow">
+          <h2 className="text-lg font-semibold text-gray-600 mb-2">Tỉ lệ huỷ đơn</h2>
+          <p className="text-2xl font-bold text-red-500">4.2%</p>
+        </div>
+      </div>
     </div>
   );
 }

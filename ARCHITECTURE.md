@@ -34,6 +34,7 @@ STATISTICAL WEB/
 ├── LICENSE
 ├── README.md
 ├── CONTRIBUTING.md
+├── CONTRIBUTORS.md
 └── ARCHITECTURE.md
 
 # Flow dữ liệu cơ bản

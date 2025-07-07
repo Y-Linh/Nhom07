@@ -45,7 +45,7 @@ git push -u origin feature/ten-cua-ban
 7. Tạo Pull Request (PR) từ GitHub để nhóm review và merge.
 
 # Cách gửi đóng góp chính thức
-Trước khi gửi Pull Request (PR), bạn cần chắc chắn rằng mã của bạn tuân thủ đúng quy định và vượt qua tất cả các kiểm tra.
+Trước khi xuất bản PR, bạn phải chạy npm run all để đảm bảo rằng bạn tuân thủ các nguyên tắc về phong cách của chúng tôi và vượt qua mọi kiểm tra.
 
 Các lệnh cần chạy:
 # Format tự động mã nguồn (có thể chỉnh sửa tệp của bạn)

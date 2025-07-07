@@ -37,7 +37,7 @@ STATISTICAL WEB/
 ├── CONTRIBUTORS.md
 └── ARCHITECTURE.md
 
-# Flow dữ liệu cơ bản
+# 🔄 Flow dữ liệu cơ bản
 Người dùng đăng nhập vào ứng dụng qua giao diện React.
 
 Giao diện React gọi API qua Axios tới backend Node.js/Express.
@@ -46,7 +46,7 @@ Backend xử lý yêu cầu và truy vấn MongoDB để lấy hoặc ghi dữ l
 
 Kết quả trả về dưới dạng JSON → hiển thị lên biểu đồ/bảng trong React.
 
-#Công cụ hỗ trợ
+# 🛠️ Công cụ hỗ trợ
 npm – Trình quản lý gói cho Node/React.
 
 Mongoose – dùng để làm việc với MongoDB.
@@ -55,9 +55,10 @@ React Router DOM – Điều hướng trong frontend.
 
 dotenv – Quản lý biến môi trường (.env).
 
-#Mục tiêu kiến trúc
+# 🎯 Mục tiêu kiến trúc
 Tách biệt frontend/backend rõ ràng → dễ bảo trì & triển khai.
 
 Tuân thủ nguyên tắc DRY 
 
 Mở rộng được trong tương lai (thêm tính năng phân quyền, dashboard nâng cao, quản trị nhiều user...).
+

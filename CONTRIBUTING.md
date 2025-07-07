@@ -25,16 +25,22 @@ npm start
 Nếu đây là lần đầu bạn đóng góp cho một dự án mã nguồn mở, bạn có thể làm theo các bước đơn giản sau:
 
 1.Fork dự án này bằng cách nhấn nút Fork ở góc phải trên cùng của GitHub.
+
 2.Clone phiên bản fork về máy:
 git clone https://github.com/<your-username>/Nhom07.git
+
 3.Tạo nhánh mới:
 git switch -c feature/ten-cua-ban
+
 4. Chỉnh sửa mã, ví dụ: thêm tên bạn vào CONTRIBUTORS.md
+
 5. Commit thay đổi:
-git add .
+git add CCONTRIBUTORS.md
 git commit -m "Thêm tên tôi vào contributors"
+
 6. Push lên GitHub:
 git push -u origin feature/ten-cua-ban
+
 7. Tạo Pull Request (PR) từ GitHub để nhóm review và merge.
 
 # Cách gửi đóng góp chính thức

@@ -32,10 +32,11 @@ git clone https://github.com/<your-username>/Nhom07.git
 3.Tạo nhánh mới:
 git switch -c feature/ten-cua-ban
 
-4. Chỉnh sửa mã, ví dụ: thêm tên bạn vào CONTRIBUTORS.md
+4. Chỉnh sửa mã vào CONTRIBUTORS.md với qui định :
+   - [Ten] - nội dung
 
 5. Commit thay đổi:
-git add CCONTRIBUTORS.md
+git add CONTRIBUTORS.md
 git commit -m "Thêm tên tôi vào contributors"
 
 6. Push lên GitHub:

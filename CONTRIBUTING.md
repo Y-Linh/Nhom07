@@ -13,6 +13,11 @@ Quy trình khởi động rất đơn giản, giống như hầu hết các dự
 2. Sao chép (clone) repository về máy.
 3. Cài đặt dependencies và bắt đầu phát triển.
 
+Trước tiên, hãy đảm bảo rằng Node.js đã được cài đặt trên máy của bạn để chạy mã của chúng tôi. Nếu bạn chưa cài đặt Node.js, hãy truy cập trang tải xuống của họ và cài đặt phiên bản được hỗ trợ dài hạn mới nhất.
+
+Để đóng góp cho dự án này, bạn có thể bắt đầu bằng cách sao chép kho lưu trữ này vào máy của mình. Sao chép kho lưu trữ này bằng cách tải xuống trực tiếp hoặc thông qua git: git clone https://github.com/Y-Linh/Nhom07.git
+
+Mở kho lưu trữ trong trình soạn thảo mã hoặc thiết bị đầu cuối bạn chọn và nhập npm install để cài đặt các phụ thuộc của dự án. 
 ### Cài đặt dự án
 
 ```bash

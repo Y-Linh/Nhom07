@@ -44,7 +44,7 @@ git switch -c feature/ten-cua-ban
 
 5. Commit thay đổi:
 git add CONTRIBUTORS.md
-git commit -m "Thêm tên tôi vào contributors"
+git commit -m "(ten): ..."
 
 6. Push lên GitHub:
 git push -u origin feature/ten-cua-ban

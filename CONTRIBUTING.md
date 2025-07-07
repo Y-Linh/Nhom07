@@ -22,7 +22,9 @@ npm install
 npm start
 
 # Hướng dẫn đóng góp lần đầu
-Nếu đây là lần đầu bạn đóng góp cho một dự án mã nguồn mở, bạn có thể làm theo các bước đơn giản sau:
+Nếu đây là lần đầu bạn đóng góp cho một 
+dự án mã nguồn mở, bạn có thể làm 
+theo các bước đơn giản sau:
 
 1.Fork dự án này bằng cách nhấn nút Fork ở góc phải trên cùng của GitHub.
 
@@ -45,7 +47,9 @@ git push -u origin feature/ten-cua-ban
 7. Tạo Pull Request (PR) từ GitHub để nhóm review và merge.
 
 # Cách gửi đóng góp chính thức
-Trước khi xuất bản PR, bạn phải chạy npm run all để đảm bảo rằng bạn tuân thủ các nguyên tắc về phong cách của chúng tôi và vượt qua mọi kiểm tra.
+Trước khi xuất bản PR, bạn phải chạy npm run all để 
+đảm bảo rằng bạn tuân thủ các nguyên tắc về phong 
+cách của chúng tôi và vượt qua mọi kiểm tra.
 
 Các lệnh cần chạy:
 # Format tự động mã nguồn (có thể chỉnh sửa tệp của bạn)
@@ -79,7 +83,11 @@ Kiểm tra kích thước:
 npm run test:size
 
 Thiết lập biến môi trường .env
-Nếu bạn chỉ muốn test mà không cần deploy thật, chỉ cần sao chép .env.example thành .env rồi khai báo biến cần thiết:
+Nếu bạn chỉ muốn test mà không cần deploy thật, 
+chỉ cần sao chép .env.example thành .env rồi 
+khai báo biến cần thiết:
 
 
-Lưu ý: Không bao giờ commit các thông tin nhạy cảm như token, mật khẩu,... vào Git. Luôn giữ chúng trong các file .env và đảm bảo .env đã nằm trong .gitignore.
+Lưu ý: Không bao giờ commit các thông tin nhạy cảm 
+như token, mật khẩu,... vào Git. 
+Luôn giữ chúng trong các file .env và đảm bảo .env đã nằm trong .gitignore.

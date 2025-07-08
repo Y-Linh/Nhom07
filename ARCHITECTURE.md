@@ -1,6 +1,6 @@
 # ARCHITECTURE.md
 
-# Tổng quan
+## Tổng quan
 
 Dự án "Ứng dụng Báo Cáo Thống Kê Dữ Liệu Kinh Doanh" là một hệ thống web giúp người quản lý theo dõi hiệu suất kinh doanh thông qua các bảng dữ liệu và biểu đồ. Ứng dụng được xây dựng với kiến trúc *MERN Stack*:
 
@@ -11,27 +11,22 @@ Dự án "Ứng dụng Báo Cáo Thống Kê Dữ Liệu Kinh Doanh" là một h
 
 ---
 
-# Cấu trúc thư mục chính
+## Cấu trúc thư mục chính
 
 ```bash
 STATISTICAL WEB/
 ├── client/              # Frontend ReactJS
-│   ├── public/          # Tài nguyên tĩnh (favicon, index.html)
+│   ├── public/          
 │   └── src/
-│       ├── components/  # Các thành phần giao diện (Home, Login, Chart, etc.)
-│       ├── pages/       # Các trang chính (Dashboard, ReportPage, etc.)
-│       ├── services/    # Các hàm gọi API hoặc xử lý logic (axios, fetch, etc.)
-│       ├── App.js       # File gốc điều hướng routing
-│       └── index.js     # Điểm khởi đầu ứng dụng React
-├── server/              # (nếu có) Backend Node + Express
-│   ├── routes/          # Các endpoint API (vd: /api/reports)
-│   ├── controllers/     # Logic xử lý dữ liệu phía server
-│   ├── models/          # Mongoose models (Product, Report, User)
-│   ├── config/          # Cấu hình kết nối MongoDB, môi trường
-│   └── index.js         # Entry point của server Express
-├── screenshots/         # Ảnh minh họa giao diện (dashboard, login...)
+│       ├── components/  # Các thành phần giao diện (Home, Login, etc.)
+│          ├── Home.js/       
+│          ├── Login.js/    
+│       ├── App.js      
+│       └── index.js     
+├── server/                      
+│   └── server.js                 
 ├── .gitignore
-├── LICENSE
+├── LICENSE.md
 ├── README.md
 ├── CONTRIBUTING.md
 ├── CONTRIBUTORS.md
@@ -39,27 +34,28 @@ STATISTICAL WEB/
 
 ---
 
-# Flow dữ liệu cơ bản
+```
+## Flow dữ liệu cơ bản
 
-Người dùng đăng nhập vào ứng dụng qua giao diện React.
+- Người dùng đăng nhập vào ứng dụng qua giao diện React.
 
-Giao diện React gọi API qua Axios tới backend Node.js/Express.
+- Giao diện React gọi API qua Axios tới backend Node.js/Express.
 
-Backend xử lý yêu cầu và truy vấn MongoDB để lấy hoặc ghi dữ liệu.
+- Backend xử lý yêu cầu và truy vấn MongoDB để lấy hoặc ghi dữ liệu.
 
-Kết quả trả về dưới dạng JSON → hiển thị lên biểu đồ/bảng trong React.
+- Kết quả trả về dưới dạng JSON → hiển thị lên biểu đồ/bảng trong React.
 
-# Công cụ hỗ trợ
+## Công cụ hỗ trợ
 
-npm – Trình quản lý gói cho Node/React.
+- npm – Trình quản lý gói cho Node/React.
 
-Mongoose – dùng để làm việc với MongoDB.
+- Mongoose – dùng để làm việc với MongoDB.
 
-React Router DOM – Điều hướng trong frontend.
+- React Router DOM – Điều hướng trong frontend.
 
-dotenv – Quản lý biến môi trường (.env).
+- dotenv – Quản lý biến môi trường (.env).
 
-# Mục tiêu kiến trúc
+## Mục tiêu kiến trúc
 
 Tách biệt frontend/backend rõ ràng → dễ bảo trì & triển khai.
 

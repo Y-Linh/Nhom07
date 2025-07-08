@@ -77,7 +77,8 @@ cách của chúng tôi và vượt qua mọi kiểm tra.
 
 6.Chỉnh sửa vấn đề của issue trong mã với qui định :
 
-7.Commit theo qui định trong doc issue
+7.Add và Commit theo qui định trong doc issue
+  - git add .
   - git commit -m "[..]: hoàn thành [tên issue]"
 
 8.Push lên GitHub:

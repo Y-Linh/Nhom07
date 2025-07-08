@@ -11,8 +11,8 @@ app.use(express.json({ limit: '20mb' }));
 
 // ===== KẾT NỐI DATABASE =====
 mongoose.connect(process.env.MONGO_URL)
-  .then(() => console.log('✅ MongoDB connected'))
-  .catch(err => console.log('❌ MongoDB connection error:', err));
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.log('MongoDB error:', err));
 
 // ===== MODEL USER =====
 const User = mongoose.model('User', new mongoose.Schema({

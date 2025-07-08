@@ -15,7 +15,7 @@ export default function Home() {
         <h1 className="text-2xl font-bold text-gray-700">📊 Bảng Thống Kê Kinh Doanh</h1>
         <button
           onClick={handleLogout}
-          className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+          className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
         >
           Đăng xuất
         </button>

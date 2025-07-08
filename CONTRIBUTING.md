@@ -84,7 +84,9 @@ cách của chúng tôi và vượt qua mọi kiểm tra.
 - git push -u origin feature/ten-cua-ban
 
 7.Tạo Pull Request (PR) từ GitHub.
-
+8.Quá trình PR
+- Add a title: giống git commit -m "[..]: hoàn thành [tên issue]"
+- Mô tả
 ## 2. Cách đồng bộ 
 Để thư mục gốc đến đúng với fork của mình chưa
 - Git remote -v

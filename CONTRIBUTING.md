@@ -65,8 +65,8 @@ cách của chúng tôi và vượt qua mọi kiểm tra.
 2.Clone phiên bản fork về máy:
 - git clone https://github.com/<your-username>/Nhom07.git
 
-3.Đồng bộ mã nguồn
-npm run format
+3.Đồng bộ mã nguồn: 
+- Nằm ở phần 2. Cách đồng bộ
 
 4.Kiểm tra trong issue
 - Chọn issue muốn đóng góp
@@ -85,8 +85,17 @@ npm run format
 
 7.Tạo Pull Request (PR) từ GitHub.
 
+## 2. Cách đồng bộ 
+Để thư mục gốc đến đúng với fork của mình chưa
+- Git remote -v
+Sẽ sinh ra fetch và push
+Kết nối đến mã nguồn mở 
+- git remote add upstream “link github gốc”
 
-# Các lệnh cần chạy:
+Đồng bộ code mới nhất lại lần nữa
+- git pull upstream main
+
+## 2.Các lệnh cần chạy:
 Format tự động mã nguồn (có thể chỉnh sửa tệp của bạn)
 - npm run format
 

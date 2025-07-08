@@ -88,11 +88,9 @@ cách của chúng tôi và vượt qua mọi kiểm tra.
 - Add a title: giống git commit -m "[..]: hoàn thành [tên issue]"
 - Mô tả
 ## 2. Cách đồng bộ 
-Để thư mục gốc đến đúng với fork của mình chưa
-- Git remote -v
-Sẽ sinh ra fetch và push
-Kết nối đến mã nguồn mở 
-- git remote add upstream “[link github gốc](https://github.com/Y-Linh/Nhom07.git)”
+- Để thư mục gốc đến đúng với fork của mình chưa: Git remote -v
+- Sẽ sinh ra fetch và push
+- Kết nối đến mã nguồn mở : git remote add upstream “[link github gốc](https://github.com/Y-Linh/Nhom07.git)”
 
 Đồng bộ code mới nhất lại lần nữa
 - git pull upstream main

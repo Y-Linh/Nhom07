@@ -90,7 +90,7 @@ cách của chúng tôi và vượt qua mọi kiểm tra.
 - Git remote -v
 Sẽ sinh ra fetch và push
 Kết nối đến mã nguồn mở 
-- git remote add upstream “link github gốc”
+- git remote add upstream “[link github gốc](https://github.com/Y-Linh/Nhom07.git)”
 
 Đồng bộ code mới nhất lại lần nữa
 - git pull upstream main

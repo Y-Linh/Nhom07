@@ -14,7 +14,7 @@ Theo đây, bất kỳ cá nhân nào có được bản sao của phần mềm 
 - Cấp phép phụ  
 - Bán các bản sao của Phần mềm  
 
-và cho phép những người được cung cấp Phần mềm thực hiện việc này, **tùy thuộc vào các điều kiện sau**:
+và cho phép những người được cung cấp phần mềm thực hiện việc này, **tùy thuộc vào các điều kiện sau**:
 
 ---
 
@@ -24,7 +24,7 @@ và cho phép những người được cung cấp Phần mềm thực hiện vi
 
 ---
 
-## ⚠️ Miễn trừ trách nhiệm
+## Miễn trừ trách nhiệm
 
 PHẦN MỀM ĐƯỢC CUNG CẤP "**NGUYÊN TRẠNG**",  
 **KHÔNG CÓ BẤT KỲ BẢO HÀNH NÀO**, RÕ RÀNG HAY NGỤ Ý, BAO GỒM NHƯNG KHÔNG GIỚI HẠN Ở:
